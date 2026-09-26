@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Database backups
+*.sql
+
+# Logs
+*.log
+
+# Build output
+dist/
+build/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Terraform
+terraform.tfvars
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log

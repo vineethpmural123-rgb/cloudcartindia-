@@ -1,0 +1,43 @@
+{
+  "rules": [
+    {
+      "rulePriority": 1,
+      "description": "Delete untagged images after 1 day",
+      "selection": {
+        "tagStatus": "untagged",
+        "countType": "sinceImagePushed",
+        "countUnit": "days",
+        "countNumber": 1
+      },
+      "action": {
+        "type": "expire"
+      }
+    },
+    {
+      "rulePriority": 2,
+      "description": "Keep latest 5 frontend images",
+      "selection": {
+        "tagStatus": "tagged",
+        "tagPrefixList": ["frontend-"],
+        "countType": "imageCountMoreThan",
+        "countNumber": 5
+      },
+      "action": {
+        "type": "expire"
+      }
+    },
+    {
+      "rulePriority": 3,
+      "description": "Keep latest 5 backend images",
+      "selection": {
+        "tagStatus": "tagged",
+        "tagPrefixList": ["backend-"],
+        "countType": "imageCountMoreThan",
+        "countNumber": 5
+      },
+      "action": {
+        "type": "expire"
+      }
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+* {
+  box-sizing: border-box;
+}
+
+.register-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* HEADER */
+
+.register-header {
+  height: 72px;
+  padding: 0 7%;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #2563eb;
+  text-decoration: none;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.header-login {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.header-login a {
+  margin-left: 8px;
+
+  color: #2563eb;
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.header-login a:hover {
+  text-decoration: underline;
+}
+
+
+/* STEPS */
+
+.register-steps {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 35px auto 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #9ca3af;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.step span {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #6b7280;
+}
+
+.step.active {
+  color: #2563eb;
+}
+
+.step.active span {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: white;
+}
+
+.step-line {
+  width: 70px;
+  height: 1px;
+
+  margin: 0 12px;
+
+  background: #d1d5db;
+}
+
+
+/* MAIN */
+
+.register-main {
+  display: flex;
+  justify-content: center;
+
+  padding: 30px 20px 60px;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 620px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 40px 48px;
+
+  box-shadow:
+    0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+
+/* TITLE */
+
+.register-title {
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+.title-icon {
+  width: 50px;
+  height: 50px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+.register-title h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 29px;
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+.register-title p {
+  margin: 9px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* FORM */
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.input-box {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 14px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #94a3b8;
+
+  transition: 0.2s;
+}
+
+.input-box:focus-within {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.input-box input {
+  flex: 1;
+
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #111827;
+
+  font-size: 14px;
+}
+
+.input-box input::placeholder {
+  color: #9ca3af;
+}
+
+
+/* PASSWORD EYE */
+
+.eye-button {
+  border: none;
+
+  background: transparent;
+
+  color: #64748b;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.eye-button:hover {
+  color: #2563eb;
+}
+
+.hint {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+}
+
+
+/* ACCOUNT TYPE */
+
+.account-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+.account-type {
+  position: relative;
+
+  min-height: 76px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #2563eb;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition: 0.2s;
+}
+
+.account-type:hover {
+  border-color: #2563eb;
+}
+
+.account-type.selected {
+  border-color: #2563eb;
+
+  background: #eff6ff;
+}
+
+.account-type strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 14px;
+}
+
+.account-type small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+}
+
+.selected-icon {
+  position: absolute;
+
+  right: 12px;
+  top: 12px;
+
+  color: #2563eb;
+}
+
+
+/* ERROR */
+
+.register-error {
+  margin-bottom: 18px;
+
+  padding: 11px 13px;
+
+  border-radius: 7px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  color: #dc2626;
+
+  font-size: 13px;
+}
+
+
+/* TERMS */
+
+.terms {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin: 5px 0 22px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.terms input {
+  width: 16px;
+  height: 16px;
+
+  margin-top: 1px;
+
+  accent-color: #2563eb;
+
+  cursor: pointer;
+}
+
+.terms a {
+  color: #2563eb;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+
+/* BUTTON */
+
+.create-account-button {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.create-account-button:hover {
+  background: #1d4ed8;
+}
+
+.create-account-button:active {
+  transform: scale(0.99);
+}
+
+
+/* LOGIN */
+
+.already-account {
+  margin-top: 25px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #e5e7eb;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+.already-account a {
+  margin-left: 6px;
+
+  color: #2563eb;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.already-account a:hover {
+  text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+.register-footer {
+  padding: 20px;
+
+  border-top: 1px solid #e5e7eb;
+
+  text-align: center;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .register-header {
+    padding: 0 20px;
+  }
+
+  .header-login {
+    font-size: 12px;
+  }
+
+  .register-logo {
+    font-size: 21px;
+  }
+
+  .register-steps {
+    margin-top: 25px;
+  }
+
+  .step {
+    font-size: 11px;
+  }
+
+  .step-line {
+    width: 30px;
+    margin: 0 6px;
+  }
+
+  .register-card {
+    padding: 30px 22px;
+
+    border: none;
+    box-shadow: none;
+  }
+
+  .register-title h1 {
+    font-size: 25px;
+  }
+
+  .account-types {
+    grid-template-columns: 1fr;
+  }
+}

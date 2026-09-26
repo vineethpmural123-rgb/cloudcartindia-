@@ -1,0 +1,441 @@
+/* =========================================
+   SELLER ADD PRODUCT PAGE
+========================================= */
+
+.seller-add-page {
+  min-height: 100vh;
+  padding: 40px 25px;
+  background: #f4f6fb;
+  font-family: Arial, sans-serif;
+}
+
+.seller-add-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.seller-add-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  padding: 32px;
+
+  border-radius: 18px;
+
+  margin-bottom: 25px;
+
+  box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  background: transparent;
+
+  color: #315fb7;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  color: #1d4ed8;
+}
+
+.seller-label {
+  margin: 0 0 8px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #315fb7;
+}
+
+.seller-add-header h1 {
+  margin: 0;
+
+  font-size: 36px;
+
+  color: #162238;
+}
+
+.seller-add-subtitle {
+  margin: 10px 0 0;
+
+  font-size: 17px;
+
+  color: #64748b;
+}
+
+.add-product-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #315fb7;
+
+  color: white;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.seller-product-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.form-section {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.section-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  padding-bottom: 20px;
+
+  margin-bottom: 25px;
+
+  border-bottom:
+    1px solid #e5e7eb;
+
+  color: #315fb7;
+}
+
+.section-header h2 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 21px;
+}
+
+.section-header p {
+  margin: 6px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   FORM FIELD
+========================================= */
+
+.form-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.form-field label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #334155;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid #dbe1ea;
+
+  border-radius: 10px;
+
+  padding:
+    13px 14px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  color: #1e293b;
+
+  background: #ffffff;
+
+  transition:
+    border 0.2s,
+    box-shadow 0.2s;
+}
+
+.form-field textarea {
+  resize: vertical;
+
+  min-height: 130px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #315fb7;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(49, 95, 183, 0.12);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #94a3b8;
+}
+
+
+/* =========================================
+   OPTIONAL
+========================================= */
+
+.optional {
+  margin-left: 3px;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  color: #94a3b8;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.description-field {
+  margin-top: 22px;
+}
+
+
+/* =========================================
+   ERROR & SUCCESS
+========================================= */
+
+.form-message {
+  padding: 15px 18px;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+.error-message {
+  background: #fee2e2;
+
+  color: #b91c1c;
+
+  border:
+    1px solid #fecaca;
+}
+
+.success-message {
+  background: #dcfce7;
+
+  color: #166534;
+
+  border:
+    1px solid #bbf7d0;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.form-buttons {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 15px;
+
+  padding:
+    10px 0 30px;
+}
+
+.cancel-button,
+.submit-product-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding:
+    14px 24px;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.cancel-button {
+  background: white;
+
+  border:
+    1px solid #d1d5db;
+
+  color: #475569;
+}
+
+.cancel-button:hover {
+  background: #f8fafc;
+}
+
+.submit-product-button {
+  border: none;
+
+  background: #315fb7;
+
+  color: white;
+
+  min-width: 190px;
+}
+
+.submit-product-button:hover {
+  background: #244a91;
+
+  transform:
+    translateY(-1px);
+}
+
+.cancel-button:disabled,
+.submit-product-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .seller-add-page {
+    padding:
+      20px 15px;
+  }
+
+  .seller-add-header {
+    padding: 24px;
+
+    align-items:
+      flex-start;
+  }
+
+  .seller-add-header h1 {
+    font-size: 29px;
+  }
+
+  .add-product-icon {
+    display: none;
+  }
+
+  .form-section {
+    padding: 22px;
+  }
+
+  .form-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .form-buttons {
+    flex-direction:
+      column;
+  }
+
+  .cancel-button,
+  .submit-product-button {
+    width: 100%;
+  }
+
+}

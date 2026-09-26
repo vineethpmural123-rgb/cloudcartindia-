@@ -1,0 +1,382 @@
+/* =========================================
+   SELLER REGISTER
+========================================= */
+
+.seller-register-page {
+  min-height: 100vh;
+  padding: 40px 20px 70px;
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      #dbeafe 0,
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fafc,
+      #eef4ff
+    );
+
+  color: #0f172a;
+}
+
+.seller-register-container {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   BACK
+========================================= */
+
+.seller-register-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 18px;
+
+  color: #2563eb;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.seller-register-back:hover {
+  color: #1d4ed8;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.seller-register-card {
+  padding: 36px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+
+  box-shadow:
+    0 20px 50px
+    rgba(15, 23, 42, 0.09);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.seller-register-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.seller-register-logo {
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.seller-register-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 850;
+
+  letter-spacing: 1.5px;
+}
+
+.seller-register-header h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 30px;
+  font-weight: 850;
+
+  letter-spacing: -0.7px;
+}
+
+.seller-register-header p {
+  margin: 9px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.seller-register-error {
+  margin-bottom: 18px;
+  padding: 13px 15px;
+
+  background: #fff1f2;
+
+  border: 1px solid #fecdd3;
+  border-radius: 10px;
+
+  color: #be123c;
+
+  font-size: 13px;
+  font-weight: 650;
+}
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.seller-register-success {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 18px;
+  padding: 13px 15px;
+
+  background: #ecfdf5;
+
+  border: 1px solid #a7f3d0;
+  border-radius: 10px;
+
+  color: #047857;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.seller-register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.seller-register-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.seller-register-field label {
+  display: flex;
+  justify-content: space-between;
+
+  color: #334155;
+
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.seller-register-field label span {
+  color: #94a3b8;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* =========================================
+   INPUT
+========================================= */
+
+.seller-register-input {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 13px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.seller-register-input svg {
+  flex-shrink: 0;
+  color: #94a3b8;
+}
+
+.seller-register-input:focus-within {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(37, 99, 235, 0.1);
+}
+
+.seller-register-input input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #0f172a;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.seller-register-input input::placeholder {
+  color: #94a3b8;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.seller-register-button {
+  height: 48px;
+
+  margin-top: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px
+    rgba(37, 99, 235, 0.22);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.seller-register-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.seller-register-button:active {
+  transform: translateY(0);
+}
+
+.seller-register-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.seller-register-login {
+  margin-top: 24px;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  border-top: 1px solid #eef2f7;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.seller-register-login a {
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 800;
+}
+
+.seller-register-login a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.seller-register-spinner {
+  animation:
+    seller-register-spin
+    1s linear infinite;
+}
+
+@keyframes seller-register-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .seller-register-page {
+    padding: 22px 12px 50px;
+  }
+
+  .seller-register-card {
+    padding: 25px 20px;
+    border-radius: 16px;
+  }
+
+  .seller-register-header h1 {
+    font-size: 25px;
+  }
+
+  .seller-register-login {
+    flex-direction: column;
+    align-items: center;
+  }
+}

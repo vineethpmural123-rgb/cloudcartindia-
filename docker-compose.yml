@@ -1,0 +1,66 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+
+    container_name: cloudcart-mysql
+
+    restart: unless-stopped
+
+    environment:
+      MYSQL_DATABASE: cloudcart
+      MYSQL_USER: cloudcart_app
+      MYSQL_PASSWORD: Appu@123
+      MYSQL_ROOT_PASSWORD: Appu@123
+
+    ports:
+      - "3307:3306"
+
+    volumes:
+      - cloudcart_mysql_data:/var/lib/mysql
+
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+
+    container_name: cloudcart-backend
+
+    restart: unless-stopped
+
+    env_file:
+      - ./backend/.env
+
+    environment:
+      DB_HOST: mysql
+      DB_USER: cloudcart_app
+      DB_PASSWORD: Appu@123
+      DB_NAME: cloudcart
+      DB_PORT: 3306
+
+    ports:
+      - "5000:5000"
+
+    depends_on:
+      - mysql
+
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+
+    container_name: cloudcart-frontend
+
+    restart: unless-stopped
+
+    ports:
+      - "5173:5173"
+
+    depends_on:
+      - backend
+
+
+volumes:
+  cloudcart_mysql_data:
