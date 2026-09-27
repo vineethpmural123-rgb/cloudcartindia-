@@ -76,7 +76,7 @@ function AppRoutes() {
         path="/"
         element={
           <Navigate
-            to="/customer/login"
+            to="/customer/products"
             replace
           />
         }
