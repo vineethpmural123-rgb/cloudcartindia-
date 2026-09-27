@@ -411,7 +411,7 @@ else if (userRole === "seller") {
     INNER JOIN products p
       ON oi.product_id = p.id
 
-    WHERE p.seller = ?
+    WHERE p.seller_id = ?
 
     GROUP BY
       o.id,
@@ -522,7 +522,7 @@ else if (userRole === "seller") {
     INNER JOIN products p
       ON oi.product_id = p.id
     WHERE o.id = ?
-    AND p.seller = ?
+    AND p.seller_id = ?
     `,
     [id, userId]
   );
