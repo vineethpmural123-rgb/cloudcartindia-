@@ -30,7 +30,7 @@ const userType = "customer";
       setLoading(true);
 
       const response = await fetch(
-  "/api/auth/verify-otp",
+  "/api/auth/verify-reset-otp",
         {
           method: "POST",
 
