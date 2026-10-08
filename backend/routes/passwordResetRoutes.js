@@ -14,7 +14,7 @@ router.post(
 );
 
 router.post(
-  "/verify-otp",
+  "/verify-reset-otp",
   verifyOTP
 );
 
